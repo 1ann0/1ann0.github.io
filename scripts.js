@@ -1,56 +1,19 @@
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f4f4f4;
+function validateForm() {
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('message').value;
+    if (name == "" || email == "" || message == "") {
+        alert("All fields must be filled out");
+        return false;
+    }
+    return true;
 }
 
-header {
-background-color: #333;
-color: white;
-padding: 10px 0;
-text-align: center;
-}
-
-nav ul {
-list-style-type: none;
-padding: 0;
-}
-
-nav ul li {
-display: inline;
-margin: 0 10px;
-}
-
-nav ul li a {
-color: white;
-text-decoration: none;
-}
-
-main {
-padding: 20px;
-}
-
-footer {
-background-color: #333;
-color: white;
-text-align: center;
-padding: 10px 0;
-position: fixed;
-width: 100%;
-bottom: 0;
-}
-
-table {
-width: 100%;
-border-collapse: collapse;
-}
-
-table, th, td {
-border: 1px solid black;
-}
-
-th, td {
-padding: 8px;
-text-align: left;
-}
+document.addEventListener("DOMContentLoaded", function() {
+    let images = document.querySelectorAll("img");
+    images.forEach(img => {
+        img.addEventListener("click", function() {
+            alert("You clicked on an image!");
+        });
+    });
+});
