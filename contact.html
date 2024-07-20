@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Qinetra Laundry</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+<header>
+    <h1>Contact Us</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Service Completion Times</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Suits</td>
+                <td>ksh800</td>
+            </tr>
+            <tr>
+                <td>Duvets</td>
+                <td>ksh900</td>
+            </tr>
+            <tr>
+                <td>Basic Household Items</td>
+                <td>ksh150 per kg</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h4>For any inquiries feel free to contact us below:</h4>
+    </section>
+    <section>
+        <h2>Get in Touch</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</main>
+</body>
+</html>
